@@ -33,6 +33,11 @@
     lockerCommand = "${pkgs.i3lock-fancy}/bin/i3lock-fancy";
   };
 
+  fonts.packages = [
+    pkgs.nerd-fonts.jetbrains-mono
+    # ou pkgs.nerd-fonts.fira-code
+  ];
+
   # Applications bureau & utilitaires X11
   environment.systemPackages = with pkgs; [
     alacritty

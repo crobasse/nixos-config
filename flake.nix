@@ -16,6 +16,7 @@
         ./modules/dev.nix
         ./modules/virtualization.nix
         ./modules/vpn.nix
+        ./modules/zsh.nix
       ];
     };
   };
