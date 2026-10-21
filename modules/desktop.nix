@@ -38,6 +38,16 @@
     # ou pkgs.nerd-fonts.fira-code
   ];
 
+services.libinput = {
+  enable = true;
+  touchpad = {
+    disableWhileTyping = true;
+    # Options utiles complémentaires :
+    tapping = true;        # Clic par tapotement
+    naturalScrolling = false; # Défilement naturel
+  };
+};	
+
   # Applications bureau & utilitaires X11
   environment.systemPackages = with pkgs; [
     alacritty
