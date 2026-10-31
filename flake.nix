@@ -25,8 +25,8 @@
         ./modules/virtualization.nix
         ./modules/vpn.nix
         ./modules/zsh.nix
-	asus-numberpad-driver.nixosModules.default
-	./modules/asus-numberpad.nix
+	#asus-numberpad-driver.nixosModules.default
+	#./modules/asus-numberpad.nix
       ];
     };
   };

@@ -48,6 +48,13 @@ services.libinput = {
   };
 };	
 
+  programs.dconf.enable = true;
+xdg.portal = {
+  enable = true;
+  extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  config.common.default = "*";
+};
+
   # Applications bureau & utilitaires X11
   environment.systemPackages = with pkgs; [
     alacritty
@@ -58,6 +65,7 @@ services.libinput = {
     clipmenu
     discord
     dmenu
+    dunst
     filezilla
     firefox
     flameshot
