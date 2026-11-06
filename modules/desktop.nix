@@ -97,6 +97,12 @@ xdg.portal = {
   config.common.default = "*";
 };
 
+services.picom = {
+  enable = true;
+  vSync = true;
+  backend = "glx";
+};
+
   # Applications bureau & utilitaires X11
   environment.systemPackages = with pkgs; [
     alacritty
@@ -121,7 +127,7 @@ xdg.portal = {
     xrandr
     xsel
     xss-lock
-	libinput
+    libinput
   ];
 
 
