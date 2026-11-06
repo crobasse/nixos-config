@@ -83,7 +83,7 @@ in
     neovim
     vscode
     graphviz
-    kicad
+    bat    
   ]) ++ (with sdlPkgs; [
     # SDL2 (patched for -fsanitize=address)
     SDL2
