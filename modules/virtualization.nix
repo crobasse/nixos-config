@@ -18,5 +18,6 @@
   environment.systemPackages = with pkgs; [
     dnsmasq
     docker
+    minikube
   ];
 }
