@@ -84,6 +84,7 @@ in
     vscode
     graphviz
     bat    
+    antigravity-cli
   ]) ++ (with sdlPkgs; [
     # SDL2 (patched for -fsanitize=address)
     SDL2
